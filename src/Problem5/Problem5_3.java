@@ -39,7 +39,7 @@ public class Problem5_3 {
     }
 
     // 인형을 집어오는 메소드
-    private static int getDoll(int[][] map, int k) {    // move 배열에 있는 열 넘버가 들어갈 예정
+    private static int getDoll(int[][] map, int k) {    // k = move 배열에 있는 열 넘버가 들어갈 예정
 
         int doll = 0;   // 인형 번호
 
