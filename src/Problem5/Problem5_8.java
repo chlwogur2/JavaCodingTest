@@ -16,7 +16,6 @@ class Person {
     }
 }
 
-
 public class Problem5_8 {
 
     public void Solution() {
