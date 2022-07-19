@@ -16,7 +16,7 @@ public class Problem6_3 {
         for (int i = 0; i < n; i++) {
             arr[i] = scn.nextInt();
         }
-
+        //
         for (int i = 1; i < n; i++) {
             int cur = arr[i];
 
@@ -29,7 +29,7 @@ public class Problem6_3 {
 
             arr[j + 1] = cur;
         }
-
+        //
         for(int x : arr) System.out.print(x + " ");
     }
 

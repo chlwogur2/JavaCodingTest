@@ -50,6 +50,17 @@ public class IOExample {
             adjList[i] = new ArrayList<>();
         }
 
+
+
+        // 인접리스트 강의에서 알려준 방식
+        ArrayList<ArrayList<Integer>> adList2 = new ArrayList<>();
+
+        for (int i = 0; i < adList2.size(); i++) {
+            adList2.add(new ArrayList<>());
+        }
+
+
+
         // M개의 간선
         /**
          * [1 3 2] -> [from, to, weight]
@@ -70,13 +81,35 @@ public class IOExample {
 
         for (int[] edge : adjList[0]) {
         }
+
+
     }
 
     public int solution(String string) {
         int answer = 0;
-
-
         return answer;
+    }
+
+    public static void main(String[] args) {
+        String s = "hello world";
+        String s1 = "world";
+
+        String[] tt = s.split(" ");
+
+        int n = 5;
+        ArrayList<char[]>[] temp = new ArrayList[n];
+        for(int i = 0; i<n; i++ ) {
+            temp[i] = new ArrayList<>();
+        }
+
+        for(int i = 0; i<2; i++){
+            for (int j = 0; j < tt[i].length(); j++) {
+                temp[i].add(tt[i].toCharArray());
+            }
+        }
+
+        System.out.println(temp);
+
     }
 
 }
