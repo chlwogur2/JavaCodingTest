@@ -1,33 +1,34 @@
 package Problem8;
 
-import javax.management.MBeanServerFactory;
 import java.util.*;
 
 public class Problem8_8 {
 
-    static int answer = 0;
     static int[] dx = {-1, 1, 0, 0};
     static int[] dy = {0, 0, -1, 1};
 
-    class coord{
+
+
+    static class Point {
         int x;
         int y;
 
-        public coord(int x, int y){
+        public Point(int x, int y){
             this.x = x;
             this.y = y;
+
         }
     }
 
     public int BFS(int[][] map) {
 
-        Queue<coord> queue = new LinkedList<>();
-        coord start = new coord(0, 0);
+        Queue<Point> queue = new LinkedList<>();
+        Point start = new Point(0, 0);
 
         queue.add(start);
 
         while (!queue.isEmpty()) {
-            coord cur = queue.poll();
+            Point cur = queue.poll();
 
             for (int i = 0; i < 4; i++) {
                 int nx = cur.x + dx[i];
@@ -37,7 +38,7 @@ public class Problem8_8 {
 
                 if (map[nx][ny] == 0) { // 해당 노드를 처음 방문할 때만 answer ++
                     map[nx][ny] = map[cur.x][cur.y] + 1;
-                    queue.add(new coord(nx, ny));
+                    queue.add(new Point(nx, ny));
                 }
             }
 
