@@ -44,7 +44,6 @@ public class Problem8_12 {
             }
             // 완료
 
-
             int cnt = 0;
 
             // 바이러스들 위치를 큐에 삽입
